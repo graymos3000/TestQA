@@ -1,0 +1,21 @@
+1. Error calling context method (ExecuteCommand):
+Не удалось провести Purchase invoice № 2, т.к. была ошибка "Товар без характеристик"
+
+2. Expected number of lines in <BasisesTree> table is равно 0 and actual number is <2>.
+Находясь в списке Sales Order при нажатии на кнопку "Form Document Purchase Order Generate" количество строк таблицы "BasisesTree" должно быть равно 0, а фактически там 2 строки.
+ 
+3. Form table named <List> is not found.
+При нажатии на кнопку "FormPostAndClose" выполняется шаг И я иду в строку в таблице "Список", однако получили ошибку "Wrong linked row".
+
+4. check serial lot number in the Retail return receipt
+На шаге "И табличный документ "ResultTable" содержит строки" проверка выявила что не заполнен столбец Branch - должны быть значения Shop01.
+
+5. The button/command with <Sales invoice> header is not found.
+Кнопка "Sales invoice" не найдена, т.к. на предыдущем шаге осталось открытым окно с ошибкой проведения документа.
+
+6. Unable to move to the required line in <BasisesTree> table.
+Невозможно перейти на нужную строку в таблице <BasisesTree>
+В первом случае при сравнении строк не совпадает количество. Текущее значение 5000, а ожидается 7000.
+
+Во втором случае не найдена строка со значениями
+TRY	100,00	10,000	Dress (S/Yellow)	pcs
